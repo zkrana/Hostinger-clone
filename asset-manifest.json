@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/hostinger-clone/static/css/main.e55789f5.css",
+    "main.js": "/hostinger-clone/static/js/main.6c02005d.js",
+    "static/js/787.d2d79d07.chunk.js": "/hostinger-clone/static/js/787.d2d79d07.chunk.js",
+    "static/media/announce-bg.svg": "/hostinger-clone/static/media/announce-bg.c3c978e1063706772608.svg",
+    "static/media/chat.png": "/hostinger-clone/static/media/chat.65fe5ad5232b4a879567.png",
+    "static/media/logo.svg": "/hostinger-clone/static/media/logo.922b969592dfc7e9a255c4020c82f964.svg",
+    "static/media/google.svg": "/hostinger-clone/static/media/google.e89c60b2165fc99f61172a972abeda06.svg",
+    "static/media/fb.svg": "/hostinger-clone/static/media/fb.7fbeef2a3d062e55be27ad976c284084.svg",
+    "index.html": "/hostinger-clone/index.html",
+    "static/media/github.svg": "/hostinger-clone/static/media/github.7581a423d1f0990756c5c625de7a8411.svg",
+    "static/media/main-logo.svg": "/hostinger-clone/static/media/main-logo.ede8dbb1bed4f179300dd772808fcac8.svg",
+    "main.e55789f5.css.map": "/hostinger-clone/static/css/main.e55789f5.css.map",
+    "main.6c02005d.js.map": "/hostinger-clone/static/js/main.6c02005d.js.map",
+    "787.d2d79d07.chunk.js.map": "/hostinger-clone/static/js/787.d2d79d07.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e55789f5.css",
+    "static/js/main.6c02005d.js"
+  ]
+}
