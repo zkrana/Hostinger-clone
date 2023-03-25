@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f5ff;
+}
+
+.bgWhite{
+  background-color: #fff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.container{
+  @apply max-w-[1140px] block mx-auto px-[15px];
+}
+.flexbox{
+  @apply flex justify-between items-center gap-4;
+}
+.btn{
+  @apply text-[white] bg-light border-borderColor break-keep whitespace-nowrap relative cursor-pointer font-[700] inline-block text-center align-middle border rounded self-center;
+}
+.btn-font{
+  @apply text-[14px] w-full md:px-[24px] py-[8px] leading-[24px];
+}
+.mb-none{
+  margin-bottom: 0 !important;
+}
+

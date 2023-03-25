@@ -1,0 +1,27 @@
+.faq{
+    @apply my-7;
+}
+.faq h2{
+    @apply text-[18px] font-semibold;
+}
+.faq p{
+    @apply text-[15px] font-[400] pt-1;
+}
+.faq-body{
+    @apply mt-[30px];
+}
+.faq-body .panel-on-off svg{
+    transform: rotate(90deg) !important;
+}
+.faq-title{
+    color: #1d1e20;
+}
+.chat-now {
+    @apply bg-[white] rounded shadow-sm border border-whiteborder;
+}
+.chat-now svg{
+    @apply w-[70px] h-[70px];
+}
+.chat-now .content-box h3{
+    @apply m-0 p-0;
+}

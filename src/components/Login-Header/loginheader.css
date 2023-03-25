@@ -1,0 +1,3 @@
+.header-container{
+    @apply w-full px-[40px] block mx-auto py-7;
+}

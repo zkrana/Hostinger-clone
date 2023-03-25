@@ -1,0 +1,12 @@
+.help-header{
+    @apply pt-[60px];
+}
+.help-header h2{
+    @apply text-[#1d1e20] mb-[1rem] text-[24px] font-semibold ;
+}
+.help-header p{
+    @apply text-[#727586] flex justify-center leading-[16px];
+}
+.help-search-bar{
+    @apply w-[60%] block mx-auto mt-[60px];
+}

@@ -1,0 +1,135 @@
+.container{
+    @apply max-w-[1140px] block mx-auto;
+}
+.login-wrapper{
+    @apply h-[calc(100vh-86px)] flex justify-center items-center;
+}
+.login{
+    @apply w-[350px] h-fit -mt-[80px];
+}
+.social-login{
+    @apply flex justify-between items-start mt-[15px] px-[40px];
+}
+.item{
+    @apply px-[24px] py-[12px] border border-[#dadce0] rounded-[4px];
+}
+.fb{
+    @apply bg-[#1877f2];
+}
+.git{
+    @apply bg-[#2f363d];
+}
+.or-wrapper{
+    @apply my-[20px];
+}
+.or-divider{
+    @apply text-[16px] text-[#979797];
+}
+.or-divider::before{
+    content: "";
+    border-top: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: middle;
+    width: 45%;
+
+}
+.or-divider::after{
+    content: "";
+    border-top: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: middle;
+    width: 45%;
+}
+.or-divider span{
+    background-color: #fff;
+}
+.form-wrapper{
+    @apply mb-5;
+}
+
+.loginSubmit{
+    @apply bg-btnBg w-full h-[50px] rounded-[4px] text-base text-[white] font-semibold mt-[5px];
+}
+.forgot{
+    @apply text-btnBg font-semibold text-base text-center;
+}
+
+
+.input-floating-label {
+    position: relative;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+  .input-floating-label .input {
+    font-family: inherit;
+    width: 100%;
+    display: block;
+    border: 0;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    outline: 0;
+    font-size: 1rem;
+    color: #3f3f3f;
+    padding: 13px 12px;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  .input-floating-label .input:required, .input-floating-label .input:invalid {
+    box-shadow: none;
+  }
+  .input-floating-label .input::placeholder {
+    color: transparent;
+  }
+  .input-floating-label .input:placeholder-shown {
+    border-color: #dadce0;
+  }
+  .input-floating-label .input:placeholder-shown ~ label {
+    font-size: 1rem;
+    cursor: text;
+    transform: translatey(17px);
+    padding: 0px 0px;
+    color: #b6b9c9;
+  }
+  .input-floating-label label {
+    position: absolute;
+    left: 12px;
+    display: block;
+    transform: translatey(-7px);
+    transition: 0.3s;
+    font-size: 0.75rem;
+    line-height: 20px;
+    padding: 0px 8px;
+    color: #6747c7;
+    background: white;
+    top: -4px;
+  }
+  .input-floating-label .input:focus {
+    border: 1px solid #673de6;
+    box-shadow: 0 0 4px #673de6;
+  
+  }
+  .input-floating-label .input:focus ~ label {
+    position: absolute;
+    transform: translatey(-7px);
+    color: #6747c7;
+    padding: 0px 8px;
+    font-size: 0.75rem;
+  }
+
+  .h-form-field-icon {
+    @apply absolute right-[10px] top-[16px] cursor-pointer;
+  }
+
+  .not-a-member {
+    @apply font-semibold mt-5;
+}
+.not-a-member a{
+    @apply text-bgColor;
+}
+.activePass{
+    @apply fill-bgColor;
+}
+
+.error{
+  @apply text-[red] text-[15px] pt-2;
+}

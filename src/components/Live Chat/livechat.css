@@ -1,0 +1,42 @@
+.chat{
+    @apply cursor-pointer;
+}
+.showChatPanel{
+    @apply block absolute w-[260px] h-[400px] right-0 bottom-[105px] bg-[white] rounded shadow-sm;
+    scroll-behavior: auto;
+}
+.hideChatPanel{
+    @apply hidden;
+}
+.chatPanel-body{
+    @apply bg-light p-5;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.agent{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.agent img{
+    width: 50px;
+    border-radius: 50%;
+    object-fit: scale-down;
+    cursor: pointer;
+}
+.welcome-note {
+    padding: 15px 0;
+    text-align: left;
+  }
+  .greet {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 600;
+  }
+  .greet-para {
+    color: #fff;
+    font-size: 20px;
+  }

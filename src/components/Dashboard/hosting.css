@@ -1,0 +1,47 @@
+.content-body{
+    @apply border-[1px] border-whiteborder rounded shadow-sm bg-[white] mb-[20px];
+}
+.main-box-wrapper{
+    @apply flex justify-between items-center flex-wrap p-[24px];
+}
+.panel-controller{
+    @apply flex justify-between items-center p-[24px] border-b-whiteborder border-b-[1px];
+}
+.panel-on-off{
+    @apply w-[24px] h-[24px] transform rotate-180 cursor-pointer;
+}
+.panel-on-off svg{
+    @apply fill-light;
+}
+.icon-box{
+    @apply relative;
+}
+.indicator{
+    @apply absolute right-[2px] top-[4px] fill-[#00b090] animate-pulse;
+}
+
+
+/* Controller */
+.HidePnael{
+    @apply hidden;
+}
+.showPanel{
+    @apply block;
+}
+.rotate{
+    @apply transform rotate-0;
+}
+.hideRotate{
+    @apply transform rotate-180;
+}
+
+/* Manage All Button */
+.manage-all {
+    @apply block mx-auto py-5 text-center;
+}
+.manage{
+    @apply flex justify-between items-center text-light text-[15px] font-semibold;
+}
+.manage svg{
+    @apply fill-light mt-[4px] ml-[10px];
+}

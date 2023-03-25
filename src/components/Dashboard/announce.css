@@ -1,0 +1,27 @@
+.announce-wrapper{
+    @apply flex justify-between items-center flex-wrap rounded shadow-sm bg-infoBg my-[24px] p-[24px];
+    background-image: url(../../images/announce-bg.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.announce-title{
+    @apply w-full md:w-[unset];
+}
+.announce-title h3{
+    @apply text-[24px] font-[700] text-[#2f1c6a] mb-3;
+}
+.announce-title p{
+    @apply text-description text-[16px] font-[400];
+}
+.announce-action span {
+    @apply w-[24px] h-[24px] cursor-pointer;
+}
+.announce-action span svg{
+    @apply fill-[#727586];
+}
+.announce-action {
+    @apply flex-col md:flex-row mx-auto mt-[20px] md:mx-0 md:mt-0;
+}
+.disNone{
+    @apply hidden;
+}

@@ -1,0 +1,63 @@
+.status-bar {
+    @apply flex justify-between items-center flex-wrap mt-[40px];
+  }
+.greetings h2{
+    @apply font-semibold text-[20px];
+}
+.status-bar .form-wrapper{
+  @apply mt-[20px] md:mt-0 w-full md:w-[unset];
+}
+.bgInput{
+    background-color: #fff !important;
+    height: 48px !important;
+    padding: 3px 0 !important;
+    padding-left: 35px !important;
+
+}
+.searchicon{
+    @apply absolute w-[32px] h-[24px] top-[14px] left-[5px];
+}
+.searchicon svg{
+    @apply fill-[#727586];
+}
+.labelSearch{
+ left: 25px !important;
+}
+
+
+.searchLabel .input:placeholder-shown ~ label {
+    font-size: 1rem;
+    cursor: text;
+    transform: translatey(17px);
+    padding: 0px 0px;
+    color: #b6b9c9;
+  }
+  .searchLabel label {
+    position: absolute;
+    left: 35px;
+    display: block;
+    transform: translatey(-7px);
+    transition: 0.3s;
+    font-size: 0.75rem;
+    line-height: 20px;
+    padding: 0px 8px;
+    color: #6747c7;
+    background: white;
+    top: -4px;
+  }
+  .searchLabel .input:focus {
+    border: 1px solid #673de6;
+    box-shadow: 0 0 4px #673de6;
+  
+  }
+  .searchLabel .input:focus ~ label {
+    position: absolute;
+    left: 4px;
+    transform: translatey(-7px);
+    color: #6747c7;
+    padding: 0px 8px;
+    font-size: 0.75rem;
+  }
+  .searchLabel{
+    margin-bottom: 0 !important;
+  }

@@ -1,0 +1,21 @@
+.status{
+    @apply mt-[30px];
+}
+.successStatus h3{
+    @apply relative pl-4;
+}
+.successStatus h3:before{
+    @apply bg-successText;
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.anchor-reg{
+    @apply text-light;
+    font-weight: 400 !important;
+}

@@ -1,0 +1,122 @@
+.header-wrapper{
+    @apply w-full h-[70px] px-[40px] flex items-center bg-[#36344d];
+}
+.company-logo {
+    @apply w-[15%] flex items-center gap-[10px];
+  }
+  .company-logo a {
+    @apply contents;
+  }
+  .main-menu nav ul{
+    @apply flex;
+  }
+  .main-menu nav ul li{
+    @apply px-[15px] text-[#c2c2c9] hover:text-[white] font-semibold;
+  }
+  .main-menu nav ul li{
+    @apply text-[16px];
+  }
+  .user-menu {
+    @apply w-full flex items-center justify-end;
+  }
+  .user-manage ul{
+    @apply flex items-center;
+  }
+  .user-manage ul li{
+    @apply px-[10px];
+  }
+  .user-manage ul li a svg{
+    @apply w-[32px] h-[32px];
+  }
+  .user-manage ul li a svg #icon{
+    @apply fill-[#c2c2c9];
+  }
+  .mobileMenu{
+    @apply hidden;
+  }
+  .mobileMenu{
+    @apply hidden;
+  }
+  @media (max-width: 1240px){
+
+    .mobileMenu{
+      display: inline-block;
+    }
+    .mobileMenu svg{
+      width: 32px;
+      height: 32px;
+      fill: #c2c2c9;
+      cursor: pointer;
+    }
+    .main-menu{
+      display: none;
+    }
+  }
+  @media (max-width: 767px){
+    .for767Device{
+      display: none;
+    }
+  }
+  @media (max-width: 380px){
+    .user-manage ul li a svg,.mobileMenu svg,
+    .company-logo img{
+      width: 25px;
+      height: 25px;
+    }
+    .header-wrapper{
+      padding: 0 10px;
+    }
+    .company-logo{
+      justify-content: center;
+    }
+  }
+
+
+
+  /* Controller */
+  .user-pro{
+    @apply relative;
+  }
+  .profile{
+    @apply block w-[282px] bg-[#fff] text-[#36344d] absolute top-[53px] right-[13px] rounded shadow-sm;
+  }
+  .profilehide{
+    @apply hidden;
+  }
+  .profile-header{
+    @apply bg-light p-5 text-left;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  .profile-header h4{
+    @apply text-[white] text-[18px] font-semibold pb-1;
+  }
+  .profile-header p{
+    @apply text-[white] text-[16px] font-[400];
+  }
+  .profile-item{
+    @apply p-5 text-left border-b border-b-[#ececec];
+  }
+  .profile-item ul li {
+    @apply flex justify-start gap-3 p-0 mb-4;
+  }
+  .profile-item ul {
+    @apply block;
+  }
+
+  .profile-item ul li svg {
+    @apply fill-[#000];
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .profile-item ul li span{
+    @apply leading-[20px] hover:text-light;
+  }
+
+  .profile-footer{
+    @apply p-5 text-center;
+  }
+
+  .logout{
+    @apply border border-[#ececec] text-light w-full py-[10px] rounded leading-[22px];
+  }

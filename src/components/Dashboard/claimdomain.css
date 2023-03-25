@@ -1,0 +1,24 @@
+.box-wrapper{
+    @apply flex justify-between items-center flex-wrap border-[1px] border-whiteborder rounded shadow-sm bg-[white] my-[24px] p-[24px];
+}
+.title{
+    @apply flex items-center gap-5 flex-col md:flex-row w-full md:w-[unset];
+}
+.regular-heading h3{
+    @apply text-[20px] font-[500] text-[#2f1c6a] mb-2;
+}
+.title p{
+    @apply text-description text-[15px] font-[400];
+}
+.title p a{
+    @apply font-[600] text-[16px];
+}
+.action span {
+    @apply w-[24px] h-[24px] cursor-pointer;
+}
+svg{
+    @apply fill-[#727586];
+}
+.action {
+    @apply w-full md:w-[unset] flex-col md:flex-row mx-auto mt-[20px] md:mx-0 md:mt-0;
+}
