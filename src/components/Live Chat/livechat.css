@@ -2,7 +2,7 @@
     @apply cursor-pointer;
 }
 .showChatPanel{
-    @apply block absolute w-[320px] h-[400px] right-0 bottom-[105px] bg-[white] rounded shadow-sm;
+    @apply block absolute w-[320px] h-fit right-0 bottom-[105px] bg-[white] rounded shadow-sm;
     scroll-behavior: auto;
 }
 .hideChatPanel{
@@ -55,4 +55,24 @@
 
   .chat-footer-item {
     @apply flex flex-col justify-center items-center;
+  }
+  .chat-help{
+    @apply bg-[white] rounded shadow-sm border border-whiteborder my-4 mx-3 p-3;
+  }
+  .chat-help ul li {
+    @apply flex justify-between text-left rounded py-[7px] px-[5px] cursor-pointer items-center text-[15px] mb-[15px] hover:text-light;
+  }
+  .chat-help ul li:hover{
+    padding: 7px 5px;
+    border-radius: 4px;
+    background-color: rgba(103, 61, 230, 0.1)
+  }
+  .chat-help ul li:first-child:hover{
+    background-color: unset
+  }
+  .chat-help ul li input {
+    @apply h-[48px] border border-whiteborder rounded pl-3 mb-2;
+  }
+  .chat-help ul li svg path{
+    fill: #673de6 !important;
   }
