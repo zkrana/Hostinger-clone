@@ -2,14 +2,15 @@
     @apply cursor-pointer;
 }
 .showChatPanel{
-    @apply block absolute w-[260px] h-[400px] right-0 bottom-[105px] bg-[white] rounded shadow-sm;
+    @apply block absolute w-[320px] h-[400px] right-0 bottom-[105px] bg-[white] rounded shadow-sm;
     scroll-behavior: auto;
 }
 .hideChatPanel{
     @apply hidden;
 }
-.chatPanel-body{
-    @apply bg-light p-5;
+
+.greet-body{
+    @apply p-5 bg-light;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -31,12 +32,27 @@
     padding: 15px 0;
     text-align: left;
   }
-  .greet {
+  .greet,.greet-para {
     font-size: 32px;
     color: #fff;
     font-weight: 600;
   }
-  .greet-para {
-    color: #fff;
-    font-size: 20px;
+
+.send-message {
+    @apply flex justify-between items-center bg-[white] rounded text-[black] text-left p-2 shadow-sm;
+}
+
+.send-message h5{
+    @apply text-[14px] leading-[18px] font-semibold;
+}
+.send-message p{
+    @apply text-[13px] leading-[18px] font-[400] pt-1;
+}
+
+.chat-footer {
+    @apply flex justify-between items-center bg-[white] rounded shadow-sm mt-4 py-5 px-6;
+  }
+
+  .chat-footer-item {
+    @apply flex flex-col justify-center items-center;
   }
