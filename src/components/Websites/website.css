@@ -1,0 +1,40 @@
+
+.websites-wrapper {
+    @apply flex mt-7 gap-[20px];
+}
+.websites-wrapper .container {
+    padding: 0;
+  }
+
+.page-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page-breadcumnb {
+    padding-right: 14px;
+    margin-right: 14px;
+    margin-bottom: unset;
+    border-right: 1px solid #dad9da;
+
+  }
+.page-breadcumnb {
+    margin-top: -3px;
+  }
+  .breadcrumb__route__label, .breadcrumb__route {
+    color: #727586;
+  }
+
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+  }
+  .manage-btn{
+    @apply p-[24px] flex justify-end;
+  }
+  .web-btn{
+    @apply border border-whiteborder rounded;
+  }
+  .web-action-icon svg {
+    @apply fill-light transform rotate-90;
+}

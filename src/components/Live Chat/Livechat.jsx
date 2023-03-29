@@ -18,7 +18,7 @@ export default function Livechat() {
 
   return (
     <div>
-        <div className="py-[20px] md:py-[40px] fixed right-[40px] bottom-0">
+        <div className="py-[20px] md:py-[40px] fixed right-[15px] sm:right-[40px] bottom-0">
           <div className="chat" onClick={liveChat}>
               <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
                 <circle cx="30" cy="30" r="30" fill="#5025D1"/>

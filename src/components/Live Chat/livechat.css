@@ -1,5 +1,8 @@
 .chat{
-    @apply cursor-pointer;
+    @apply w-[50px] h-[50px] cursor-pointer;
+}
+.chat svg {
+  width: 100%;
 }
 .showChatPanel{
     @apply block absolute w-[320px] h-fit right-0 bottom-[105px] bg-[white] rounded shadow-sm;
@@ -75,4 +78,17 @@
   }
   .chat-help ul li svg path{
     fill: #673de6 !important;
+  }
+
+  @media (max-width: 1366px) {
+    .showChatPanel{
+      height: 500px;
+      overflow-y: scroll;
+    }
+  }
+  @media (max-width: 575px) {
+    .showChatPanel{
+      height: 380px;
+      overflow-y: scroll;
+    }
   }

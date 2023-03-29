@@ -18,6 +18,22 @@ export default function Header() {
 
   let profileShow = userprofile ? 'profile' : 'profilehide';
 
+  const [mbMenu, setMbMenu] = useState(false)
+
+  const mbMenuCon = () =>{
+    if(mbMenu === false){
+      setMbMenu(true)
+    }
+  }
+
+  const hideMbNavPanel = ()=>{
+    setMbMenu(false)
+  }
+
+  let MobileNav = mbMenu ? 'navMB' : null;
+
+
+
   return (
     <header>
         <div className="header-wrapper">
@@ -31,68 +47,52 @@ export default function Header() {
                 <nav>
                   <ul>
                     <li>
-                      <a href='#'> 
-                        <NavLink to='/index'>
-                          Home
-                        </NavLink> 
-                      </a>
-                    </li>
+                      <NavLink to='/index'>
+                        Home
+                      </NavLink> 
+                  </li>
 
-                    <li>
-                      <a href='#'> 
-                        <NavLink to='/index'>
-                          Websites
-                        </NavLink> 
-                      </a>
-                    </li>
+                  <li>
+                      <NavLink to='/websites'>
+                        Websites
+                      </NavLink> 
+                  </li>
 
-                    <li>
-                      <a href='#'> 
-                        <NavLink to='/index'>
-                          Hosting
-                        </NavLink> 
-                      </a>
-                    </li>
+                  <li>
+                      <NavLink to='/index'>
+                        Hosting
+                      </NavLink> 
+                  </li>
 
-                    <li>
-                      <a href='#'> 
-                        <NavLink to='/index'>
-                          Emails
-                        </NavLink> 
-                      </a>
-                    </li>
+                  <li>
+                      <NavLink to='/index'>
+                        Emails
+                      </NavLink> 
+                  </li>
 
-                    <li>
-                      <a href='#'> 
-                        <NavLink to='/index'>
-                          Domains
-                        </NavLink> 
-                      </a>
-                    </li>
+                  <li>
+                      <NavLink to='/index'>
+                        Domains
+                      </NavLink> 
+                  </li>
 
-                    <li>
-                      <a href='#'> 
-                        <NavLink to='/index'>
-                          VPS
-                        </NavLink> 
-                      </a>
-                    </li>
+                  <li>
+                      <NavLink to='/index'>
+                        VPS
+                      </NavLink> 
+                  </li>
 
-                    <li>
-                      <a href='#'> 
-                        <NavLink to='/index'>
-                          SSL
-                        </NavLink> 
-                      </a>
-                    </li>
+                  <li>
+                      <NavLink to='/index'>
+                        SSL
+                      </NavLink> 
+                  </li>
 
-                    <li>
-                      <a href='#'> 
-                        <NavLink to='/index'>
-                          Billing
-                        </NavLink> 
-                      </a>
-                    </li>
+                  <li>
+                      <NavLink to='/index'>
+                        Billing
+                      </NavLink> 
+                  </li>
                   </ul>
                 </nav>
             </div>
@@ -236,8 +236,67 @@ export default function Header() {
                       </div>
                       </a>
                     </li>
-                    <li className='mobileMenu'>
+                    <li className='mobileMenu' onClick={mbMenuCon}>
                       <svg part="svg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" aria-labelledby="ic-menu" focusable="false" viewBox="0 0 24 24" class="h-icon icon-static-view-box h-icon--no-custom-width"><g><path id='icon' fill-rule="evenodd" clip-rule="evenodd" d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z"></path></g></svg>
+                    <div id='hideMbColumn' className={MobileNav}>
+                      <div className="header-close">
+                        <div className="closed" onClick={hideMbNavPanel}>
+                          <span>Close</span> 
+                          <svg part="svg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" aria-labelledby="ic-close" focusable="false" viewBox="0 0 24 24" class="h-icon icon-primary icon-static-view-box h-icon--no-custom-width header-menu__icon"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"></path></g></svg>
+                        </div>
+                      </div>
+                        <nav>
+                          <ul className="mb-nav-wrapper">
+                            <li>
+                                <NavLink to='/index'>
+                                  Home
+                                </NavLink> 
+                            </li>
+
+                            <li>
+                                <NavLink to='/websites'>
+                                  Websites
+                                </NavLink> 
+                            </li>
+
+                            <li>
+                                <NavLink to='/index'>
+                                  Hosting
+                                </NavLink> 
+                            </li>
+
+                            <li>
+                                <NavLink to='/index'>
+                                  Emails
+                                </NavLink> 
+                            </li>
+
+                            <li>
+                                <NavLink to='/index'>
+                                  Domains
+                                </NavLink> 
+                            </li>
+
+                            <li>
+                                <NavLink to='/index'>
+                                  VPS
+                                </NavLink> 
+                            </li>
+
+                            <li>
+                                <NavLink to='/index'>
+                                  SSL
+                                </NavLink> 
+                            </li>
+
+                            <li>
+                                <NavLink to='/index'>
+                                  Billing
+                                </NavLink> 
+                            </li>
+                          </ul>
+                        </nav>
+                    </div>                      
                     </li>
                   </ul>
                 </div>

@@ -41,6 +41,7 @@
 
     .mobileMenu{
       display: inline-block;
+      position: relative;
     }
     .mobileMenu svg{
       width: 32px;
@@ -78,7 +79,7 @@
     @apply relative;
   }
   .profile{
-    @apply block w-[282px] bg-[#fff] text-[#36344d] absolute top-[53px] right-[13px] rounded shadow-sm;
+    @apply block w-[282px] bg-[#fff] text-[#36344d] absolute top-[53px] right-0 sm:right-[13px] rounded shadow-sm z-20;
   }
   .profilehide{
     @apply hidden;
@@ -119,4 +120,56 @@
 
   .logout{
     @apply border border-[#ececec] text-light w-full py-[10px] rounded leading-[22px];
+  }
+
+
+  /* Mobile Navigation */
+  #hideMbColumn{
+    @apply hidden;
+  }
+  .navMB{
+    @apply block absolute;
+  }
+  .navMB {
+    display: block !important;
+    background: #fff;
+    right: 0;
+    position: fixed;
+    width: 400px;
+    max-width: 400px;
+    padding: 10px 0;
+    top: 0;
+    height: 100vh;
+    z-index: 12;
+  }
+  .mb-nav-wrapper{
+    display: block !important;
+    text-align: left;
+  }
+  .header-close {
+    @apply flex justify-end pr-4;
+  }
+  .closed {
+    @apply flex items-center cursor-pointer;
+  }
+  .closed span {
+    @apply -mt-[3px] leading-[30px] text-light;
+  }
+  .closed svg {
+    width: 24px;
+    height: 24px;
+  }
+  .closed svg path{
+    @apply fill-light;
+  }
+  .mb-nav-wrapper {
+    text-align: left;
+  }
+  
+
+  .mb-nav-wrapper li {
+    @apply py-[10px] pl-3 hover:bg-[#f2f3f7];
+  }
+  .mb-nav-wrapper li a{
+    @apply text-[20px] text-[#343a40];
   }
