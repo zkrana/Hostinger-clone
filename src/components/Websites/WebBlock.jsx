@@ -12,6 +12,20 @@ export default function WebBlock() {
 
     let actionPanel = show ? 'webActionPanel' : 'hidewebActionPanel';
 
+    const [showbuilder, setBuilder] = useState(false);
+    const showHostingerBuilder = () => {
+        if( showbuilder == false ){
+            setBuilder(true)
+        }else{
+            setBuilder(false)
+        }
+    }
+    let builderShow = showbuilder ? 'changeBuilderPanel' : 'changeBuilderPanelHide';
+
+    const builderHide = () =>{
+        setBuilder(false)
+    }
+
   return (
     <div className="container w-full sm:w-[49%]">
         <div className="content-body w-full">
@@ -37,11 +51,36 @@ export default function WebBlock() {
                             <svg part="svg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" aria-labelledby="actionDots" focusable="false" viewBox="0 0 24 24" class="h-icon icon-primary cursor-pointer horizontal" width="32" height="32" dataV73710d93="" block=""><g><g><circle cx="12.1091" cy="4" r="2"></circle><circle cx="12.1091" cy="20" r="2"></circle><circle cx="12.1091" cy="12" r="2"></circle></g></g></svg>
                         <div className={actionPanel}>
                             <ul>
-                                <li> <span>Change to <br></br>hostinger builder</span> </li>
+                                <li onClick={showHostingerBuilder}> <span>Change to <br></br>hostinger builder</span> </li>
                                 <li> <span>Renew</span> </li>
                                 <li> <span>Upgrade</span> </li>
                                 <li> <span>Delete website</span> </li>
                             </ul>
+                        </div>
+                    </div>
+                    <div className={builderShow}>
+                        <div className="overlay">
+                            <div className="builder-main">
+                                <div className="pageBuilderHeader">
+                                <h3> What Is Hostinger Builder? </h3>
+                                </div>
+                                <div className="builderVideoIntro">
+                                    <video src='https://hpanel-main.hostinger.com/assets/media/HostingerBuiler_Animation.9b69ae0d.mp4' autoPlay="true"></video>
+                                </div>
+                                <div className="builder-details">
+                                    <p><span data-msgid="Simplified alternative to WordPress">Simplified alternative to WordPress</span></p>
+                                    <p><span data-msgid="Easy drag &amp; drop interface">Easy drag &amp; drop interface</span></p>
+                                    <p><span data-msgid="Included e-commerce solution">Included e-commerce solution</span></p>
+                                    <p><span data-msgid="Dedicated live support team">Dedicated live support team</span></p>
+                                    <p><span data-msgid="You can restore the previous website within 14 days"><strong>You can restore the previous website within 14 days</strong></span></p>
+                                </div>
+                                <div className="builderActionBtn">
+                                    <div onClick={builderHide} className="close-btn mr-3 cursor-pointer py-2 px-3 mb-3 sm:-mb-[2px] hover:bg-[#ebe4ff] hover:rounded">
+                                        <span> Close </span>
+                                    </div>
+                                    <button className='btn btn-font textBase'> Change to Hostinger Builder </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
