@@ -117,3 +117,12 @@
     width: 100% !important;
   }
 }
+
+
+/* Renew Prompt */
+.openRenew{
+  @apply block absolute w-full h-screen top-0 right-0 bottom-0 left-0;
+}
+.hideRenewPrompt{
+  @apply hidden;
+}

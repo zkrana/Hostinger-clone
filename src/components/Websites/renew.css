@@ -1,0 +1,36 @@
+.overlay {
+    @apply bg-[#c1c4c6a3] absolute w-[100%] h-screen left-0 right-0 top-0 bottom-0;
+  }
+.renew-wrapper{
+    @apply absolute top-[50%] left-[50%] max-w-[600px] bg-[white] py-[32px] px-10 rounded shadow-sm z-10;
+    transform: translate(-50%, -50%);
+  }
+  .renew-header{
+    @apply text-left mb-4;
+  }
+  .block-heading{
+    @apply text-[16px] leading-[24px] font-[600];
+  }
+  .block-desc{
+    @apply text-description font-normal text-[15px] leading-[25px];
+  }
+  .purchase-deatils{
+    @apply flex justify-between items-center mb-5 text-left;
+  }
+.subscription-id h4, .package-name h4{
+    @apply text-description;
+}
+.subscription-id p{
+    @apply font-semibold;
+}
+
+.renew-details{
+    @apply p-3 bg-[#f2f3f6] rounded;
+}
+.table {
+    display: table;
+    width: 100%;
+  }
+  .table tr td {
+    padding: 0 50px;
+  }

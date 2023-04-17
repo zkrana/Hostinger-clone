@@ -111,7 +111,7 @@ export default function Login() {
                         {/* </NavLink> */}
                     </form>
                     <a className='forgot' href='#'>
-                        Forgot Passowrd?
+                        Forgot Password?
                     </a>
                     <p class="not-a-member">Not a member yet? <a class="text-h-hpanel-primary" href="/web-hosting">Choose a hosting plan</a> and get started now!</p>
                 </div>

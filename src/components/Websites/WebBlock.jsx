@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import './website.css'
+import Renew from './Renew'
+
 export default function WebBlock() {
     const [show, setHide] = useState(false)
     const showHide = () =>{
@@ -25,6 +27,18 @@ export default function WebBlock() {
     const builderHide = () =>{
         setBuilder(false)
     }
+
+    
+    const [renew, setRenew] = useState(false);
+    const showRenewPrompt = () => {
+        if( renew === false ){
+            setRenew(true)
+        }else{
+            setRenew(false)
+        }
+    }
+    let renewShow = renew ? 'openRenew' : 'hideRenewPrompt';
+
 
   return (
     <div className="container w-full sm:w-[49%]">
@@ -52,7 +66,7 @@ export default function WebBlock() {
                         <div className={actionPanel}>
                             <ul>
                                 <li onClick={showHostingerBuilder}> <span>Change to <br></br>hostinger builder</span> </li>
-                                <li> <span>Renew</span> </li>
+                                <li onClick={showRenewPrompt}> <span>Renew</span> </li>
                                 <li> <span>Upgrade</span> </li>
                                 <li> <span>Delete website</span> </li>
                             </ul>
@@ -82,6 +96,11 @@ export default function WebBlock() {
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    {/* Renew Component */}
+                    <div className={renewShow}>
+                        <Renew />
                     </div>
                 </div>
             </div>
