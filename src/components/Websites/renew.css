@@ -1,8 +1,8 @@
 .overlay {
-    @apply bg-[#c1c4c6a3] absolute w-[100%] h-screen left-0 right-0 top-0 bottom-0;
+    @apply bg-[#c1c4c6a3] fixed w-[100%] h-screen left-0 right-0 top-0 bottom-0 z-[99999];
   }
 .renew-wrapper{
-    @apply absolute top-[50%] left-[50%] max-w-[600px] bg-[white] py-[32px] px-10 rounded shadow-sm z-10;
+    @apply max-w-[600px] fixed top-[50%] left-[47%] sm:left-[50%] mx-2 sm:mx-0 w-full sm:w-[600px] max-w-[600px] bg-[white] py-4 sm:py-[32px] px-3 sm:px-10 rounded shadow-sm z-[999999];
     transform: translate(-50%, -50%);
   }
   .renew-header{
@@ -27,10 +27,27 @@
 .renew-details{
     @apply p-3 bg-[#f2f3f6] rounded;
 }
-.table {
+.table{
+  @apply w-full;
+}
+.table table {
     display: table;
     width: 100%;
   }
-  .table tr td {
-    padding: 0 50px;
+  .tbale tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .table table tr td{
+    display: inline-block;
+    padding: 5px 0;
+  }
+  .table table tr td:last-child{
+    color: rgb(121, 121, 121);
+  }
+  .table table tr td span svg {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
   }
