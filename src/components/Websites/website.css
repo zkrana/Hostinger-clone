@@ -32,13 +32,21 @@
     align-items: center;
   }
   .manage-btn{
-    @apply p-[24px] flex justify-end;
+    @apply px-[24px] pt-3 pb-[15px] flex justify-end;
+  }
+
+  .fixweb-block-p{
+    @apply pt-0 px-0;
   }
   .web-btn{
     @apply border border-whiteborder rounded;
   }
   .web-action-icon svg {
     @apply fill-light transform rotate-90 hover:bg-[#f8f1f1] hover:rounded-full;
+}
+
+.panel-controller{
+  @apply pt-[24px] pb-0;
 }
 
 

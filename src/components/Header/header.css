@@ -7,6 +7,9 @@
   .company-logo a {
     @apply contents;
   }
+  .main-menu{
+    @apply ml-5;
+  }
   .main-menu nav ul{
     @apply flex;
   }

@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import './renew.css'
 export default function Renew() {
-    const [renew, setRenew] = useState(true);
+    const [renews, setRenews] = useState(true);
 
     const renewBlockHide = () =>{
-        if(renew === true){
-            setRenew(false)
+        if(renews == true){
+            setRenews(false)
         }else{
-            setRenew(true)
+            setRenews(true)
         }
        
     }

@@ -2,6 +2,8 @@ import React from 'react'
 import Header from '../Header/Header'
 import WebsiteSearch from './WebsiteSearch'
 import WebBlock from './WebBlock'
+import WebsiteBuilder from './WebsiteBuilder'
+import MigrateWebsite from './MigrateWebsite'
 export default function Websites() {
   return (
     <div>
@@ -12,7 +14,8 @@ export default function Websites() {
                 <WebBlock />
                 <WebBlock />
                 <WebBlock />
-                <WebBlock />
+                <WebsiteBuilder />
+                <MigrateWebsite />
             </div>
         </div>
     </div>

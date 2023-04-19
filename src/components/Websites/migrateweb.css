@@ -1,0 +1,9 @@
+.migrate-website{
+    @apply bg-[white] border-[2px] border-dashed border-[#8c85ff] rounded flex justify-center items-center min-h-[182px] p-[24px] cursor-pointer;
+}
+.migrate-website h4{
+    @apply text-[16px] font-[600] leading-[24px] text-light;
+}
+.migrate-website svg{
+    @apply w-[20px] h-[20px] fill-light mt-1;
+}

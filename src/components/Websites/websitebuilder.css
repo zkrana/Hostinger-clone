@@ -1,0 +1,18 @@
+.website-builder{
+    @apply bg-[#d5dfff] p-3 rounded shadow-sm;
+}
+.builder-content{
+    @apply text-left;
+}
+.builder-content h2{
+    @apply text-[#2f1c6a] text-[20px] leading-[25px];
+}
+.builder-content p{
+    @apply text-[15px] text-[#2f1c6a] leading-[20px] my-3;
+}
+.close{
+    @apply hover:bg-[#ebe4ff] hover:text-bgColor font-semibold px-[35px] py-[9px] hover:rounded;  
+}
+.builderPromoBannerHide{
+    @apply hidden;
+}
