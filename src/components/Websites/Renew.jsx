@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './renew.css'
+import '../Websites/Renew'
 export default function Renew() {
     const [renews, setRenews] = useState(true);
 

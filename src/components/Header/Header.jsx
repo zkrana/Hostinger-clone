@@ -59,7 +59,7 @@ export default function Header() {
                   </li>
 
                   <li>
-                      <NavLink to='/index'>
+                      <NavLink to='/hostings'>
                         Hosting
                       </NavLink> 
                   </li>
@@ -260,7 +260,7 @@ export default function Header() {
                             </li>
 
                             <li>
-                                <NavLink to='/index'>
+                                <NavLink to='/hostings'>
                                   Hosting
                                 </NavLink> 
                             </li>
