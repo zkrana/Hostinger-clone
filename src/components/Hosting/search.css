@@ -45,9 +45,7 @@
     @apply fill-light transform rotate-90 hover:bg-[#f8f1f1] hover:rounded-full;
 }
 
-.panel-controller{
-  @apply pt-[24px] pb-0;
-}
+
 
 /* webActionPanel */
 .web-action-icon{

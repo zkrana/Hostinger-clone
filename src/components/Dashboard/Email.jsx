@@ -19,7 +19,7 @@ export default function Email() {
 
   return (
 
-    <div className="container">
+    <div className="container mt-5">
         <div className="content-body">
             <div className="panel-controller">
                 <div className="title text-[18px]">

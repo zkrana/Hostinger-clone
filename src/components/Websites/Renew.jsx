@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../Websites/Renew'
+import './renew.css'
 export default function Renew() {
     const [renews, setRenews] = useState(true);
 
@@ -44,6 +44,11 @@ export default function Renew() {
                             <td> $157.84</td>
                         </tr>
                     </table>
+                    <div className="privacy-renew">
+                        <p className=' text-justify'>
+                            By checking out, you agree with our <a href='#'>Terms of Service</a> and confirm that you have read our <a href='#'>Privacy Policy</a>. You can cancel recurring payments at any time.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div className="builderActionBtn mt-5">

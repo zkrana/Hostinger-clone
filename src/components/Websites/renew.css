@@ -51,3 +51,12 @@
     height: 20px;
     display: inline-block;
   }
+  .privacy-renew{
+    @apply py-2;
+  }
+  .privacy-renew p{
+    @apply text-base text-[#1d1e20];
+  }
+  .privacy-renew p a{
+    @apply text-light font-semibold;
+  }

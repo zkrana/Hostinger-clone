@@ -5,7 +5,7 @@
     @apply flex justify-between items-center flex-wrap p-[24px];
 }
 .panel-controller{
-    @apply flex justify-between items-center p-[24px] border-b-whiteborder border-b-[1px];
+    @apply flex justify-between items-start p-[12px] border-b-whiteborder border-b-[1px];
 }
 .panel-on-off{
     @apply w-[24px] h-[24px] transform rotate-180 cursor-pointer;
