@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../Header/Header'
 import Hostingblock from './Hostingblock'
 import Search from './Search'
-import MigrateWebsite from '../Websites/MigrateWebsite'
+import Hostingadd from './Hostingadd'
 export default function Hostingpage() {
   return (
     <div>
@@ -11,7 +11,7 @@ export default function Hostingpage() {
         <div className="container">
             <div className="websites-wrapper">
                 <Hostingblock />
-                <MigrateWebsite />
+                <Hostingadd />
             </div>
         </div>
     </div>

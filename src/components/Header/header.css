@@ -144,6 +144,7 @@
     top: 0;
     height: 100vh;
     z-index: 12;
+    border-left: 5px solid #673de6;
   }
   .mb-nav-wrapper{
     display: block !important;
@@ -171,7 +172,10 @@
   
 
   .mb-nav-wrapper li {
-    @apply py-[10px] pl-3 hover:bg-[#f2f3f7];
+    @apply py-[10px] pl-3 hover:bg-[#673de6] cursor-pointer;
+  }
+  .mb-nav-wrapper li:hover a{
+    color: #fff !important;
   }
   .mb-nav-wrapper li a{
     @apply text-[20px] text-[#343a40];

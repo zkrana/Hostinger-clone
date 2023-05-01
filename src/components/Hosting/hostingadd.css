@@ -1,0 +1,9 @@
+.migrate-hosting{
+    @apply bg-[white] border-[2px] border-dashed border-[#8c85ff] rounded flex justify-center items-center min-h-[249px] p-[24px] cursor-pointer;
+}
+.migrate-hosting h4{
+    @apply text-[16px] font-[600] leading-[24px] text-light;
+}
+.migrate-hosting svg{
+    @apply w-[20px] h-[20px] fill-light mt-1;
+}

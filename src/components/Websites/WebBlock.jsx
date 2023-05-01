@@ -31,12 +31,9 @@ export default function WebBlock() {
     
     const [renew, setRenew] = useState(false);
     const showRenewPrompt = () => {
-        if( renew === false ){
-            setRenew(true)
-        }else{
-            setRenew(false)
-        }
+        setRenew(!renew);
     }
+
     let renewShow = renew ? 'openRenew' : 'hideRenewPrompt';
 
 
@@ -100,7 +97,7 @@ export default function WebBlock() {
 
                     {/* Renew Component */}
                     <div className={renewShow}>
-                        <Renew />
+                        <Renew renewOpen={setRenew} />
                     </div>
                 </div>
             </div>

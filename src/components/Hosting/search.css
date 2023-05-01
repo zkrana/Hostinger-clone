@@ -131,3 +131,43 @@
   .hideRenewPrompt{
     @apply hidden;
   }
+
+  /* Hosting Block */
+  .full-width{
+    width: 100%;
+  }
+  .edit-host {
+    margin-left: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  .edit-host path {
+    fill: #673de6;
+  }
+
+  .hosting-usage{
+    @apply py-4;
+  }
+  .usages-bar{
+    overflow: hidden;
+    width: 100%;
+    height: 7px;
+    background: #ebe4ff;
+    border-radius: 8px;
+    margin-top: 4px;
+    position: relative;
+  }
+
+  .usages-bar:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5%;
+    height: 100%;
+    background: #673de6;
+    border-radius: 8px;
+  }
+  .active-hosting-p{
+    font-size: 13px !important;
+  }

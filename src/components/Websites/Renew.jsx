@@ -1,16 +1,8 @@
 import React, { useState } from 'react'
 import './renew.css'
-export default function Renew() {
-    const [renews, setRenews] = useState(true);
+export default function Renew({renewOpen}) {
 
-    const renewBlockHide = () =>{
-        if(renews == true){
-            setRenews(false)
-        }else{
-            setRenews(true)
-        }
-       
-    }
+        console.log(typeof renewOpen);
   return (
     <div className='overlay'>
         <div className="renew-wrapper">
@@ -52,7 +44,7 @@ export default function Renew() {
                 </div>
             </div>
             <div className="builderActionBtn mt-5">
-                <div onClick={renewBlockHide} className="close-btn mr-3 cursor-pointer py-2 px-3 mb-3 sm:-mb-[2px] hover:bg-[#ebe4ff] hover:rounded">
+                <div onClick={() =>{renewOpen(false)}} className="close-btn mr-3 cursor-pointer py-2 px-3 mb-3 sm:-mb-[2px] hover:bg-[#ebe4ff] hover:rounded">
                     <span> Close </span>
                 </div>
                 <button className='btn btn-font textBase'> Change to Hostinger Builder </button>
