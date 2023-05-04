@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './website.css'
 import Renew from './Renew'
+import { NavLink } from 'react-router-dom'
 
 export default function WebBlock() {
     const [show, setHide] = useState(false)
@@ -64,7 +65,7 @@ export default function WebBlock() {
                             <ul>
                                 <li onClick={showHostingerBuilder}> <span>Change to <br></br>hostinger builder</span> </li>
                                 <li onClick={showRenewPrompt}> <span>Renew</span> </li>
-                                <li> <span>Upgrade</span> </li>
+                                <li> <span><NavLink to='/websites/upgrade'>Upgrade</NavLink></span> </li>
                                 <li> <span>Delete website</span> </li>
                             </ul>
                         </div>

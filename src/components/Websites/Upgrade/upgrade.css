@@ -1,0 +1,33 @@
+.page-thumbnail {
+    @apply flex justify-start items-center px-5 py-7 relative;
+}
+.page-back{
+    @apply flex justify-start items-center;
+}
+.page-back svg {
+    @apply w-[20px] h-[20px] mr-[10px];
+}
+.page-back span {
+    @apply leading-[25px];
+}
+.page-anchor{
+    @apply flex items-center;
+}
+.page-tittle{
+    @apply block;
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.page-heading{
+    @apply text-[25px] font-semibold text-[#000];
+    word-break: break-all;
+}
+.page-title-desc{
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0;
+    color: #727586;
+}
